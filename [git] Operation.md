@@ -98,6 +98,14 @@
 
 
 
+#### Add a branch and switch to the new branch
+
+```
+> git checkout -b branch-a
+```
+
+
+
 #### The current branch with asterisk
 
 ```
