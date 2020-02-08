@@ -132,6 +132,14 @@ $ git branch
 
 
 
+#### Remove the remote tracking branch (origin/branch)
+
+```
+> git branch -d -r origin/branch-a
+```
+
+
+
 ## Merge the branch
 
 #### Return to master
