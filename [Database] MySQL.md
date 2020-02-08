@@ -108,7 +108,7 @@ mysql> SHOW TABLES;
 ```
 Example:
 mysql> CREATE TABLE IF NOT EXISTS table_name (
-	     id INT AUTO_INCREAMENT NOT NULL PRIMARY KEY,
+	     id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	     title VARCHAR(255) NOT NULL,
          start_date DATE,
          due_date DATE,
