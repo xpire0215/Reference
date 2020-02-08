@@ -4,10 +4,55 @@ Version: 8.0
 
 
 
+## Initial MySQL Server for Chinese
+
 #### Show Current Status
 
 ```
 mysql> STATUS
+```
+
+
+
+#### Show Character
+
+```
+mysql> SHOW VARIABLES LIKE "%char%";
+```
+
+
+
+### Only Once
+
+#### Modify MySQL Server Character
+
+```
+mysql> SET character_set_server=utf8;
+```
+
+
+
+#### Modify MySQL Database Character
+
+```
+mysql> SET character_set_database=utf8;
+```
+
+
+
+### Permanent
+
+#### Modify /etc/mysql/my.cnf
+
+```
+[mysqld]
+character-set-server=utf8
+
+[client]
+default-character-set=utf8
+
+[mysql]
+default-character-set=utf8
 ```
 
 
