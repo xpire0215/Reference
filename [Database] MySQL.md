@@ -85,6 +85,14 @@ mysql> USE database_name;
 
 
 
+#### Delete Database
+
+```
+mysql> DROP DATABASE database_name;
+```
+
+
+
 ## Table Operation
 
 #### Show Tables
@@ -116,6 +124,14 @@ mysql> CREATE TABLE IF NOT EXISTS table_name (
 
 ```
 mysql> desc table_name;
+```
+
+
+
+#### Delete Table
+
+```
+mysql> DROP TABLE table_name;
 ```
 
 
