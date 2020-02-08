@@ -17,7 +17,23 @@ mysql> STATUS
 #### Show Character
 
 ```
-mysql> SHOW VARIABLES LIKE "%char%";
+mysql> SHOW VARIABLES LIKE "%character%";
+```
+
+
+
+#### Show Collation
+
+```
+mysql> SHOW VARIABLES LIKE "%collation%";
+```
+
+
+
+#### Show Database Character and Collation
+
+```
+mysql> SELECT SCHEMA_NAME 'database', default_character_set_name 'charset', DEFAULT_COLLATION_NAME 'collation' FROM information_schema.SCHEMATA;
 ```
 
 
@@ -36,6 +52,14 @@ mysql> SET character_set_server=utf8;
 
 ```
 mysql> SET character_set_database=utf8;
+```
+
+
+
+#### Modify MySQL Database Collation
+
+```
+mysql> SET collation_database=utf8_general_ci;
 ```
 
 
@@ -108,7 +132,7 @@ mysql> SHOW TABLES;
 ```
 Example:
 mysql> CREATE TABLE IF NOT EXISTS table_name (
-	     id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	     title VARCHAR(255) NOT NULL,
          start_date DATE,
          due_date DATE,
