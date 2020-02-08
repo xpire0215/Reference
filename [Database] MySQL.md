@@ -67,6 +67,14 @@ mysql> CREATE TABLE IF NOT EXISTS table_name (
 
 
 
+#### Show the structure of the table
+
+```
+mysql> desc table_name;
+```
+
+
+
 ## Account Operation
 
 #### Show Users
