@@ -1,0 +1,12 @@
+Service Providers - Main service, the central place of all Laravel application bootstrapping.
+					config/app.php, the list of the service provider classes
+
+Service Container - Managing class dependencies and performing dependency injection.
+
+Operation 
+Route - routes/web.php
+	http://your-app.test/user
+	Route::get('/user', 'UserController@index');
+
+Middleware
+	If you want a middleware to run during every HTTP request to your application, list the middleware class in the $middleware property of your app/Http/Kernel.php class.
