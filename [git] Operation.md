@@ -148,3 +148,11 @@ $ git branch
 > git merge branch-a
 ```
 
+
+
+## Modify last commit message
+
+```
+> git commit --amend
+```
+
