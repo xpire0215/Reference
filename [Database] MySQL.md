@@ -2,42 +2,74 @@
 
 Version: 8.0
 
-### Show Current Status
+
+
+#### Show Current Status
 
 ```
 mysql> STATUS
 ```
 
+
+
 ## Database Operation
 
-### Show Databases
+#### Show Databases
 
 ```
 mysql> SHOW DATABASES;
 ```
 
-### Create Database
+
+
+#### Create Database
+
 ```
 # Grant specific privileges to a user account
 # Account Operation -> Set Privilege
 mysql> CREATE DATABASE database_name;
 ```
 
-### Select Database
+
+
+#### Select Database
 
 ```
 mysql> USE database_name;
 ```
 
-### Show Tables
+
+
+## Table Operation
+
+#### Show Tables
 
 ```
 mysql> SHOW TABLES;
 ```
 
-# Account Operation
 
-### Show Users
+
+#### Create Table
+
+```
+Example:
+mysql> CREATE TABLE IF NOT EXISTS table_name (
+	     id INT AUTO_INCREAMENT NOT NULL PRIMARY KEY,
+	     title VARCHAR(255) NOT NULL,
+         start_date DATE,
+         due_date DATE,
+         status TINYINT NOT NULL,
+         description TEXT,
+         created_at TIMESTAMP,
+	   )
+```
+
+
+
+## Account Operation
+
+#### Show Users
 
 ```
 # Show the architecture of mysql.user
@@ -47,13 +79,17 @@ mysql> desc mysql.user;
 mysql> select host, user from mysql.user;
 ```
 
-### Create User
+
+
+#### Create User
 
 ```
 > CREATE USER 'user_name'@'localhost' IDENTIFIED BY 'user_password';
 ```
 
-### Set Privilege
+
+
+#### Set Privilege
 
 ```
 mysql> GRANT permission1, permission2 ON database_name.table_name TO 'user_name'@'localhost';
