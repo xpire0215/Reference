@@ -144,6 +144,14 @@ mysql> CREATE TABLE IF NOT EXISTS table_name (
 
 
 
+#### Insert Data to Table
+
+```
+mysql> INSERT INTO table_name (column1, column2,...) VALUES (value1, value2,...);
+```
+
+
+
 #### Add Column to Table
 
 ```
