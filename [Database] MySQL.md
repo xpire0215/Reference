@@ -139,7 +139,26 @@ mysql> CREATE TABLE IF NOT EXISTS table_name (
          status TINYINT NOT NULL,
          description TEXT,
          created_at TIMESTAMP,
-	   )
+	   );
+```
+
+
+
+#### Add Column to Table
+
+```
+mysql> ALTER TABLE table_name ADD COLUMN new_column TYPES AFTER column_name;
+
+Example:
+mysql> ALTER TABLE username ADD COLUMN student_ID INT NOT NULL AFTER student_name;
+```
+
+
+
+#### Delete Column from Table
+
+```
+mysql> ALTER TABLE table_name DROP COLUMN column_name;
 ```
 
 
