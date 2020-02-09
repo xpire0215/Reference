@@ -140,6 +140,14 @@ $ git branch
 
 
 
+#### Delete the remote branch
+
+```
+> git push origin :branch-a
+```
+
+
+
 ## Merge the branch
 
 #### Return to master
